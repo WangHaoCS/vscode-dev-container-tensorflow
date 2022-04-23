@@ -4,9 +4,9 @@ FROM tensorflow/tensorflow:$IMAGE_TAG
 # Use the [Option] comment to specify true/false arguments that should appear in VS Code UX
 #
 # [Option] Install zsh
-ARG INSTALL_ZSH="true"
+ARG INSTALL_ZSH="false"
 # [Option] Install OhMyZsh
-ARG INSTALL_OHMYZSH="true"
+ARG INSTALL_OHMYZSH=$INSTALL_ZSH
 # [Option] Upgrade OS packages to their latest versions
 ARG UPGRADE_PACKAGES="false"
 

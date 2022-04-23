@@ -10,12 +10,9 @@
 	
 	// Starting a GPU enabled CUDA container
 	"runArgs": [
-		"--gpus",
-		"all",
-		"--env",
-		"NVIDIA_VISIBLE_DEVICES=all",
-		"--env",
-		"NVIDIA_DRIVER_CAPABILITIES=compute,utility"
+		"--gpus", "all",
+		"--env", "NVIDIA_VISIBLE_DEVICES=all",
+		"--env", "NVIDIA_DRIVER_CAPABILITIES=compute,utility"
 	],
 	
 	// Set *default* container specific settings.json values on container create.
